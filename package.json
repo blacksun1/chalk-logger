@@ -8,7 +8,7 @@
     "lab": "./node_modules/.bin/lab -cSv -a code -r console -o stdout -r html -o coverage.html --verbose",
     "test": "npm run lab",
     "travis": "grunt && ./node_modules/.bin/lab -a code --verbose --coverage -r lcov | node_modules/.bin/coveralls",
-    "prepublish": "npm run test"
+    "prepublish": "grunt && npm run test"
   },
   "files": [
     "dist",

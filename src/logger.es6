@@ -1,8 +1,13 @@
 /* eslint-disable no-console */
+const Assert = require("assert");
+
 
 exports = module.exports = class ConsoleLogger {
 
     constructor(chalk, console, name) {
+
+        Assert(chalk, "chalk is a required argument");
+        Assert(console, "console is a required argument");
 
         this.chalk = chalk;
         this.console = console;

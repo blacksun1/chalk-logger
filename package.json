@@ -1,7 +1,7 @@
 {
   "name": "blacksun1-chalk-logger",
   "description": "Simple logger that uses chalk to create a human friendly output",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index",
   "license": "MIT",
   "scripts": {

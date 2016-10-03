@@ -1,5 +1,7 @@
 # chalk-logger
 
+[![Build Status](https://travis-ci.org/blacksun1/chalk-logger.svg?branch=master)](https://travis-ci.org/blacksun1/chalk-logger)
+
 A pleasant readable logger for humans.
 
 # API

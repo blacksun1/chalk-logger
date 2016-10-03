@@ -4,7 +4,40 @@
 
 A pleasant readable logger for humans.
 
-# API
+## Usage
+
+First install the package into your application
+
+```bash
+npm install --save blacksun1-chalk-logger
+```
+
+and then in your code
+
+```js
+const LoggerFactory = require("blacksun1-chalk-logger").loggerFactory;
+const Package = require("./package.json");
+
+const myLogger = LoggerFactory(Package.name);
+
+myLogger.info("I'm logging!");
+```
+
+or if you use Intavenous you can use the registration package to regisiter it and it's required services into your container.
+
+```js
+const LoggerModule = require("blacksun1-chalk-logger").registrationModule;
+const Package = require("./package.json");
+const Intavenous = require("intavenous");
+
+const container = Intavenous.create();
+LoggerModule(container);
+const myLogger = container.get("logger", Package.name);
+
+myLogger.info("I'm logging!");
+```
+
+## API
 
 Exports the following:
 

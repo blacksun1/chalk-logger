@@ -6,7 +6,7 @@ before_script:
   - grunt
 
 script:
-  - npm test
+  - npm run travis
 
 node_js:
   - "4"

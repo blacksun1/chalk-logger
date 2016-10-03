@@ -1,0 +1,31 @@
+{
+  "name": "ioc-logger",
+  "description": "ioc-test logger package - very simple example of using babel and Intravenous together",
+  "version": "0.0.0",
+  "main": "./dist/index",
+  "license": "MIT",
+  "scripts": {
+    "lab": "./node_modules/.bin/lab -cSv -a code -r console -o stdout -r html -o coverage.html --verbose",
+    "test": "grunt && npm run lab",
+    "travis": "grunt && ./node_modules/.bin/lab -a code --verbose --coverage -r lcov | node_modules/.bin/coveralls"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "chalk": "^1.1.3",
+    "intravenous": "^0.1.4-beta"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.14.0",
+    "code": "^4.0.0",
+    "coveralls": "^2.11.14",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-cmd": "0.0.4",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "lab": "^11.0.1",
+    "load-grunt-tasks": "^3.3.0",
+    "sinon": "^1.17.6"
+  }
+}
